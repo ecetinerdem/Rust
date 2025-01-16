@@ -32,3 +32,9 @@ fn mltcond() {
         println!("number is not divisible by 4, 3, or 2");
     }
 }
+
+fn iflet() {
+    let condition = true;
+
+    let number = if condition { 5 } else { 6 }; // if condition is true, number is 5, otherwise 6
+}
