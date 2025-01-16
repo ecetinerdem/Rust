@@ -37,4 +37,5 @@ fn iflet() {
     let condition = true;
 
     let number = if condition { 5 } else { 6 }; // if condition is true, number is 5, otherwise 6
+    println!("the value of number is: {number}");
 }
