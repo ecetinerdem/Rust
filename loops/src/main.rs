@@ -39,3 +39,31 @@ fn whloop() {
     }
     println!("LIFTOFF!!");
 }
+
+/// This function will print out the values of the array `a` in order.
+/// It does this by looping through the array with a `while` loop and
+/// printing out the value at each index.
+fn whileloop() {
+    let a = [10, 20, 30, 40, 50];
+
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+        index += 1;
+    }
+}
+
+fn forloop() {
+    let a = [10, 20, 30, 40, 50];
+    for element in a {
+        println!("the value is: {element}");
+    }
+}
+
+fn reverse_forloop() {
+    for number in (1..4).rev() {
+        println!("{number}");
+    }
+    println!("LIFTOFF!!");
+}
