@@ -54,12 +54,18 @@ fn whileloop() {
     }
 }
 
+    /// This function prints out the elements of the array `a`
+    /// in order. It does this by looping through the array with
+    /// a `for` loop and printing out each element.
 fn forloop() {
     let a = [10, 20, 30, 40, 50];
     for element in a {
         println!("the value is: {element}");
     }
 }
+
+/// This function prints numbers from 3 to 1 in reverse order, followed by "LIFTOFF!!".
+/// It utilizes a reverse iterator on the range 1 to 4 (exclusive).
 
 fn reverse_forloop() {
     for number in (1..4).rev() {
