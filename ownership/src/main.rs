@@ -11,6 +11,27 @@ fn main() {
     let s2 = String::from("hello");
 
     let s3 = takes_and_gives_back(s2);
+
+    let s4 = String::from("hello");
+    let (s4, len) = calculate_length(s4);
+
+    println!("The length of {s4} is {len}")
+
+
+    let s6 = String::from("hello");
+    let len = calculate_length2(&s6);
+
+    println!("The length of {s6} is {len}")
+}
+
+
+fn calculate_length2(s:&String) -> usize {
+    s.len()
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len();
+    (s, length)
 }
 
 fn takes_ownership(some_string: String) {
