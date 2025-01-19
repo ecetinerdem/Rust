@@ -19,6 +19,8 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         calculate_area(&rect2)
     )
+
+    println!("rect2 is {:#?}" rect2);
 }
 
 fn area(width: u32, height: u32) -> u32 {
@@ -31,7 +33,7 @@ fn area_calculate(dimensions: (u32, u32)) -> u32 {
 }
 
 
-
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
