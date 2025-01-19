@@ -12,7 +12,7 @@ impl Rectangle {
     fn width(&self) -> bool {
         self.width > 0
     }
-    
+
     fn can_hold(&self, other_rect: &Rectangle) -> bool {
         self.width > other_rect.width && self.height > other_rect.height
     }
@@ -27,12 +27,12 @@ fn main() {
     let rect2 = Rectangle {
         width: 10,
         height: 40,
-    }
+    };
 
     let rect3 = Rectangle {
         width: 60,
         height: 45,
-    }
+    };
 
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
@@ -46,12 +46,3 @@ fn main() {
         println!("The rectangle has a nonzero width; it is {}", rect1.width);
     }
 }
-
-
-
-
-
-
-
-
-
