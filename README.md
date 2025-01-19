@@ -1,0 +1,1 @@
+This repository only for me to keep a track of my record of learning rust through  The Rust programming Language book.(2021 edition)
