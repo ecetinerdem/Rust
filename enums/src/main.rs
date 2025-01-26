@@ -1,3 +1,5 @@
+use std::net::{Ipv4Addr, Ipv6Addr};
+
 fn main() {
     enum IpAddrKind {
         v4(String),
@@ -30,5 +32,31 @@ fn main() {
     let apartment = IpAddr::V4(String::from("127.0.0.1"));
     let backloop = IpAddr::V6(String::from("::1"));
 
-    
+
+}
+
+
+
+fn tenums() {
+    enum IpAddr {
+        V4(u8, u8, u8, u8),
+        V6(String),
+    }
+
+    let home =IpAddr::V4(127, 0, 0, 1);
+    let loopback = IpAddr::V6(String::from("::1"));
+}
+
+fn standartEnums () {
+    enum IpAddr {
+        V4(Ipv4Addr),
+        V6(Ipv6Addr),
+    }
+}
+
+fn anotherExample () {
+    Quit,
+    Move {x: i32, y: i32},
+    Write(String),
+    ChangeColor(i32, i32, i32),
 }
