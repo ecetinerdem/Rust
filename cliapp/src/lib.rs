@@ -89,7 +89,7 @@ mod tests {
 
         assert_eq!(
             vec!["Rust:", "Trust me."],
-            search_case_incensitive(query, contents)
+            search_case_insensitive(query, contents)
         );
     }
 }
